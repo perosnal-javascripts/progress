@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>进度条</title>
+        <style>
+            .container {
+                width: 400px;
+                height: 50px;
+                border: 1px solid #efefef;
+                position: relative;
+            }
+            #progress {
+                width: 0;
+                height: 100%;
+                background-color: tomato;
+            }
+            .percent-wrap {
+                display: flex;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+        <button onClick="progress.autoPlay()">安装</button>
+    </body>
+    <script src="./js/index.js"></script>
+    <script>
+        var progress = new Progress({
+            percentage: 10
+        })        
+    </script>
+</html>
